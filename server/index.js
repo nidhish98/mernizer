@@ -12,8 +12,7 @@ app.use(express.urlencoded({ limit: "20mb", extended: true }));
 app.use("/students", studentRoutes);
 
 const CONNECTION_URL =
-  "mongodb+srv://drupal_user:drupal23@cluster0.rgonz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
-
+  "MONGODB_URL"
 const PORT = process.env.PORT || 5000;
 
 mongoose
